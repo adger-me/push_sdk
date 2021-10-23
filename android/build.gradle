@@ -1,0 +1,51 @@
+group 'me.adger.pushsdk'
+version '1.0'
+apply plugin: 'com.android.library'
+apply plugin: 'com.mob.sdk'
+
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "http://mvn.mob.com/android"
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'com.mob.sdk:MobSDK:+'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "http://mvn.mob.com/android"
+        }
+    }
+}
+
+
+android {
+    compileSdkVersion 30
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 17
+    }
+}
+
+MobSDK{
+    autoConfig  false
+    MobPush{
+        debugLevel 4
+    }
+}

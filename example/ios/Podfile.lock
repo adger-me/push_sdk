@@ -1,0 +1,36 @@
+PODS:
+  - Flutter (1.0.0)
+  - mob_pushsdk (3.0.3):
+    - mob_pushsdk/MobPush (= 3.0.3)
+    - MOBFoundation
+  - mob_pushsdk/MobPush (3.0.3):
+    - MOBFoundation
+  - MOBFoundation (3.2.27)
+  - push_sdk (0.0.1):
+    - Flutter
+    - mob_pushsdk
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - push_sdk (from `.symlinks/plugins/push_sdk/ios`)
+
+SPEC REPOS:
+  trunk:
+    - mob_pushsdk
+    - MOBFoundation
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  push_sdk:
+    :path: ".symlinks/plugins/push_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  mob_pushsdk: da91cf00e2bc3ac01b5cbd58a204e0a0d1b4c145
+  MOBFoundation: efdc3ce6b843fbc10ae8c1c6122a02b0d845b39b
+  push_sdk: e6ea07dba3016b91a0892e85710a6a8f7f4d3672
+
+PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+
+COCOAPODS: 1.11.2
